@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- icon animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Rest Api Free By Fadly ID">
+    <meta name="author" content="Fadly ID">
+    <title>X-None API</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="dark-mode">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <i class="fa fa-smile-beam fa-2x"></i>
+                <div class="sidebar-brand-text mx-3">X-None APIs</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-fw fa-thermometer-three-quarters"></i>
+                    <span>Statistic</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Features
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownload" aria-expanded="true" aria-controls="collapseBootstrap">
+                    <i class="fa fa-fw fa-arrow-down"></i>
+                    <span>Downloader & Media</span>
+                </a>
+                <div id="collapseDownload" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Downloader & Media</h6>
+                        <a class="collapse-item" target="_blank" href="/api/music/joox?query=akad&apikey=beta" target="_blank" >Joox Search</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/joox3?query=akad&apikey=beta" target="_blank" >Joox Search2</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/joox2?query=akad&apikey=beta" target="_blank" >Joox Media</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/smule?url=https://www.smule.com/recording/lewis-capaldi-someone-you-loved-slower-piano/1112691877_3200708124&apikey=beta" target="_blank" >Smule Download</a>
+			              <a class="collapse-item" target="_blank" href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=beta" target="_blank" >YouTube Video</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/ytmp42?url=https://youtu.be/6l5V3BWDcMw&apikey=beta" target="_blank" >YouTube Video2</a>
+			              <a class="collapse-item" target="_blank" href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=beta" target="_blank" >YouTube Audio</a>
+			              <a class="collapse-item" target="_blank" href="/api/download/ytmp32?url=https://youtu.be/6l5V3BWDcMw&apikey=beta" target="_blank" >YouTube Audio2</a>
+                                      <a class="collapse-item" target="_blank" href="/api/downloader/facebook?url=https://www.facebook.com/botikaonline/videos/837084093818982&apikey=beta" target="_blank" >Facebook Download</a>
+                                      <a class="collapse-item" target="_blank" href="/api/downloader/fb?url=https://www.facebook.com/100044139564343/posts/375127390635243&apikey=beta" target="_blank" >Facebook Download2</a>
+			              <a class="collapse-item" target="_blank" href="/api/music/spotify?query=akad&apikey=beta" target="_blank" >Spotify Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/downloader/pinterest?q=aeshestic&apikey=beta" target="_blank" >Pinterest Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/unplash?q=good night&apikey=beta" target="_blank" >Unplash Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/sticker?q=patrick&apikey=beta" target="_blank" >Sticker WA Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/stickerline?url=https://store.line.me/stickershop/product/9409/id=APIKEY" target="_blank" >Sticker Line Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/shoppe?q=jaket gunung&apikey=beta" target="_blank" >Shoppe Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/downloader/wallpaperflare?query=anime&apikey=beta" target="_blank" >Wallpaperflare Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/googleimg?query=kucing&apikey=beta" target="_blank" >Google Image</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/apk?query=whatsapp&apikey=beta" target="_blank" >Apk Search</a>
+                                      <a class="collapse-item" target="_blank" href="/api/download/apkdl?url=URL_NYA&apikey=beta" target="_blank" >Apk Download</a>
+			              <a class="collapse-item" target="_blank" href="/api/yt/playmp3?query=surender&apikey=beta" target="_blank" >Play mp3</a>
+                          <a class="collapse-item" target="_blank" href="/api/yt/playmp4?query=surender&apikey=beta" target="_blank" >Play mp4</a>
+			             <a class="collapse-item" target="_blank" href="/api/yt/search?query=surender&apikey=beta" target="_blank" >YouTube Search</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=beta" target="_blank" >Tiktok Download</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/tiktok2?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=beta" target="_blank" >Tiktok Download2</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/ig?url=https://www.instagram.com/p/CUU8PwHhU-9/?utm_medium=copy_link&apikey=beta" target="_blank" >Instagram Post</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/igtv?url=https://www.instagram.com/tv/CSW1PMohXDm&apikey=beta" target="_blank" >Instagram TV</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/igstory?username=attahalilintar&apikey=beta" target="_blank" >Instagram Story</a>
+                        <a class="collapse-item" target="_blank" href="/api/download/mediafire?url=https://www.mediafire.com/file/v035jsup2d2wp1n/textprome.js/file&apikey=beta" target="_blank" >Mediafire Download</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/twitterimg?url=https://twitter.com/renaldypjs/status/1343516524934438912&apikey=beta" target="_blank" >Twitter Image Download</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/twittervid?url=https://twitter.com/weareoneEXO/status/1344811074864914433&apikey=beta" target="_blank" >Twitter Video Download</a>
+                        <a class="collapse-item" target="_blank" href="/api/stalk/ig?username=iamfadlyid_&apikey=beta" target="_blank" >Stalk Instagram</a>
+                        <a class="collapse-item" target="_blank" href="/api/stalk/ig2?username=iamfadlyid_&apikey=beta" target="_blank" >Stalk Instagram2</a>
+                        <a class="collapse-item" target="_blank" href="/api/stalk/github?username=xdlyy404&apikey=beta" target="_blank" >Stalk Github</a>
+			 <a class="collapse-item" target="_blank" href="/api/stalk/tiktok?username=fadlyid404&apikey=beta" target="_blank" >Stalk Tiktok</a>
+                        <a class="collapse-item" target="_blank" href="/api/stalk/npm?query=ra-api&apikey=beta" target="_blank" >Stalk NPM</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/pornhub?query=japan&apikey=beta" target="_blank" >Pornhub Search</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/xnxx?query=japan&apikey=beta" target="_blank" >Xnxx Search</a>
+                        <a class="collapse-item" target="_blank" href="/api/downloader/xvideo?query=japan&apikey=beta" target="_blank" >Xvideos Search</a>                             
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextPro" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span>Text Maker</span>
+                </a>
+                <div id="collapseTextPro" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                         <h6 class="collapse-header">Image Maker</h6>
+                        <a class="collapse-item" href="/api/maker/harta-tahta?text=Fadly&apikey=beta" target="_blank" >Harta Tahta</a>
+                        <a class="collapse-item" href="/api/maker/silverbutton?text=Fadly&apikey=beta" target="_blank" >Silver Button</a>
+                        <a class="collapse-item" href="/api/maker/goldbutton?text=Fadly&apikey=beta" target="_blank" >Gold Button</a>
+                        <a class="collapse-item" href="/api/maker/nulis?text=Fadly&apikey=beta" target="_blank" >Nulis</a>
+                        <a class="collapse-item" href="/api/maker/emoji2png?text=%F0%9F%98%85&apikey=beta" target="_blank" >Emoji To PNG</a>
+                        <h6 class="collapse-header">TextProMe Features</h6>
+                        <a class="collapse-item" href="/api/textpro/magma?text=Fadly&apikey=beta" target="_blank" >Magma</a>
+<a class="collapse-item" href="/api/textpro/hallowen-text?text=Fadly&apikey=beta" target="_blank" >Hallowen Effect</a>
+<a class="collapse-item" href="/api/textpro/neon-light?text=Fadly&apikey=beta" target="_blank" >Neon Light</a>
+<a class="collapse-item" href="/api/textpro/broken-glass?text=Fadly&apikey=beta" target="_blank" >Broken Glass</a>
+<a class="collapse-item" href="/api/textpro/art-papper?text=Fadly&apikey=beta" target="_blank" >Art Papper</a>
+<a class="collapse-item" href="/api/textpro/glossy?text=Fadly&apikey=beta" target="_blank" >Glossy</a>
+<a class="collapse-item" href="/api/textpro/water-color?text=Fadly&apikey=beta" target="_blank" >Water Color</a>
+<a class="collapse-item" href="/api/textpro/multi-color?text=Fadly&apikey=beta" target="_blank" >Multi Color</a>
+<a class="collapse-item" href="/api/textpro/neon-devil?text=Fadly&apikey=beta" target="_blank" >Neon Devil</a>
+<a class="collapse-item" href="/api/textpro/sky-text?text=Fadly&apikey=beta" target="_blank" >Sky Text</a>
+<a class="collapse-item" href="/api/textpro/luxury?text=Fadly&apikey=beta" target="_blank" >Luxury</a>
+<a class="collapse-item" href="/api/textpro/vintage?text=Fadly&text2=ID&apikey=beta" target="_blank" >Vintage</a>
+<a class="collapse-item" href="/api/textpro/writing?text=Fadly&apikey=beta" target="_blank" >Writing</a>
+<a class="collapse-item" href="/api/textpro/engraved?text=Fadly&apikey=beta" target="_blank" >Engraved</a>
+<a class="collapse-item" href="/api/textpro/glue-text?text=Fadly&apikey=beta" target="_blank" >Glue Text</a>
+<a class="collapse-item" href="/api/textpro/pornhub?text=Fadly&text2=ID&apikey=beta" target="_blank" >Pornhub</a>
+<a class="collapse-item" href="/api/textpro/holograpic?text=Fadly&apikey=beta" target="_blank" >Holograpic</a>
+<a class="collapse-item" href="/api/textpro/deluxe-silver?text=Fadly&apikey=beta" target="_blank" >Deluxe Silver</a>
+<a class="collapse-item" href="/api/textpro/fabric?text=Fadly&apikey=beta" target="_blank" >Fabric</a>
+<a class="collapse-item" href="/api/textpro/wicker?text=Fadly&apikey=beta" target="_blank" >Wicker</a>
+<a class="collapse-item" href="/api/textpro/larva?text=Fadly&apikey=beta" target="_blank" >Larva</a>
+<a class="collapse-item" href="/api/textpro/toxic-bokeh?text=Fadly&apikey=beta" target="_blank" >Toxic</a>
+<a class="collapse-item" href="/api/textpro/stroberi?text=Fadly&apikey=beta" target="_blank" >Strobery</a>
+<a class="collapse-item" href="/api/textpro/koi?text=Fadly&apikey=beta" target="_blank" >Koi Pish</a>
+<a class="collapse-item" href="/api/textpro/bread?text=Fadly&apikey=beta" target="_blank" >Bread</a>
+<a class="collapse-item" href="/api/textpro/horor-blood?text=Fadly&apikey=beta" target="_blank" >Horor Blood</a>
+<a class="collapse-item" href="/api/textpro/honey?text=Fadly&apikey=beta" target="_blank" >Honey</a>
+<a class="collapse-item" href="/api/textpro/ice?text=Fadly&apikey=beta" target="_blank" >Ice</a>
+<a class="collapse-item" href="/api/textpro/rusty?text=Fadly&apikey=beta" target="_blank" >Rusty Effect</a>
+             <a class="collapse-item" href="/api/textpro/captain?text=Fadly&text2=ID&apikey=beta" target="_blank" >Captain Amerika</a>
+            <a class="collapse-item" href="/api/textpro/3d-gradient?text=Fadly&apikey=beta" target="_blank" >Gradien</a>
+            <a class="collapse-item" href="/api/textpro/christmas?text=Fadly&apikey=beta" target="_blank" >Christmas</a>
+            <a class="collapse-item" href="/api/textpro/drop-water?text=Fadly&apikey=beta" target="_blank" >Drop Water</a>
+            <a class="collapse-item" href="/api/textpro/black-pink?text=Fadly&apikey=beta" target="_blank" >Blackpink</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf?text=Fadly&text2&apikey=beta" target="_blank" >Logo Wolf</a>
+            <a class="collapse-item" href="/api/textpro/logo-wolf2?text=Fadly&text2&apikey=beta" target="_blank" >Logo Wolf 2</a>
+            <a class="collapse-item" href="/api/textpro/natural-leavest?text=Fadly&apikey=beta" target="_blank" >Natural leavest</a>
+            <a class="collapse-item" href="/api/textpro/harry-potter?text=Fadly&apikey=beta" target="_blank" >Harry Potter</a>
+            <a class="collapse-item" href="/api/textpro/3dstone?text=Fadly&apikey=beta" target="_blank" >3D Stone</a>
+            <a class="collapse-item" href="/api/textpro/1917?text=Fadly&apikey=beta" target="_blank" >1917</a>
+            <a class="collapse-item" href="/api/textpro/thunder2?text=Fadly&apikey=beta" target="_blank" >Thunder 2</a>
+            <a class="collapse-item" href="/api/textpro/space?text=Fadly&text2=ID&apikey=beta" target="_blank" >Space</a>
+            <a class="collapse-item" href="/api/textpro/joker-logo?text=Fadly&apikey=beta" target="_blank" >Joker Logo</a>
+            <a class="collapse-item" href="/api/textpro/hallowen?text=Fadly&apikey=beta" target="_blank" >Hallowen</a>
+            <a class="collapse-item" href="/api/textpro/blood?text=Fadly&apikey=beta" target="_blank" >Blood Text</a>
+            <a class="collapse-item" href="/api/textpro/astone?text=Fadly&apikey=beta" target="_blank" >Astone</a>
+            <a class="collapse-item" href="/api/textpro/grafity-text?text=Fadly&apikey=beta" target="_blank" >Grafity Text</a>
+            <a class="collapse-item" href="/api/textpro/grafity-text2?text=Fadly&text2=ID&apikey=beta" target="_blank" >Grafity Text 2</a>
+            <a class="collapse-item" href="/api/textpro/ninja-logo?text=Fadly&text2=ID&apikey=beta" target="_blank" >Ninja Logo</a>
+            <a class="collapse-item" href="/api/textpro/lion-logo?text=Fadly&text2=ID&apikey=beta" target="_blank" >Lion Logo</a>
+            <a class="collapse-item" href="/api/textpro/avengers-logo?text=Fadly&text2=ID&apikey=beta" target="_blank" >Avengers</a>
+            <a class="collapse-item" href="/api/textpro/marvel-logo2?text=Fadly&text2=ID" target="_blank" >Marvel Studio</a>
+            <h6 class="collapse-header">PhotoOxy Features</h6>
+                <a class="collapse-item" href="/api/photooxy/army?text=Fadly&apikey=beta" target="_blank" >Army Text</a>
+                        <a class="collapse-item" href="/api/maker/matrix?text=Fadly&apikey=beta" target="_blank" >Matrix</a>
+                        <a class="collapse-item" href="/api/maker/pubglogo?text1=Fadly&text2=ID&apikey=beta" target="_blank" >PUBG</a>
+                        <a class="collapse-item" href="/api/maker/breakwall?text=Fadly&apikey=beta" target="_blank" >Breakwall</a>
+                        <a class="collapse-item" href="/api/photooxy/butterfly?text=Fadly&apikey=beta" target="_blank" >Butterfly</a>
+                        <a class="collapse-item" href="/api/photooxy/naruto?text1=Fadly&apikey=beta" target="_blank" >Naruto</a>
+                        <a class="collapse-item" href="/api/photooxy/smoke?text1=Fadly&apikey=beta" target="_blank" >Smoke Text</a> 
+                        <a class="collapse-item" href="/api/photooxy/burn-papper?text=Fadly&apikey=beta" target="_blank" >Burn Papper</a>
+                        <a class="collapse-item" href="/api/photooxy/love-message?text=Fadly&apikey=beta" target="_blank" >Love Message</a>
+                        <a class="collapse-item" href="/api/photooxy/love-text?text=Fadly&apikey=beta" target="_blank" >Love Text</a>
+                        <a class="collapse-item" href="/api/photooxy/coffe-cup?text=Fadly&apikey=beta" target="_blank" >Coffe Cup</a>
+                        <a class="collapse-item" href="/api/photooxy/double-heart?text=Fadly&apikey=beta" target="_blank" >Double Heart</a>
+                        <a class="collapse-item" href="/api/photooxy/glitch?text=Fadly&text2=ID&apikey=beta" target="_blank" >Glitch Effect</a>
+                        <a class="collapse-item" href="/api/photooxy/message-under-grass?text=Fadly&apikey=beta" target="_blank" >Message Under Grass</a>                                                            
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGame" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fas fa-laptop"></i>
+                    <span>Game</span>
+                </a>
+                <div id="collapseGame" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Game Features</h6>
+                        <a class="collapse-item" target="_blank" href="/api/kuis/tebakGambar?apikey=beta" target="_blank" >Tebak Gambar</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebaklirik?apikey=beta" target="_blank" >Tebak Lirik</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakkata?apikey=beta" target="_blank" >Tebak Kata</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakkalimat?apikey=beta" target="_blank" >Tebak Kalimat</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebaktebakan?apikey=beta" target="_blank" >Tebak Tebakan</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakjenaka?apikey=beta" target="_blank" >Tebak Jenaka</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakbendera?apikey=beta" target="_blank" >Tebak Bendera</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakkimia?apikey=beta" target="_blank" >Tebak Kimia</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/tebakchara?apikey=beta" target="_blank" >Tebak Chara</a>
+                        <a class="collapse-item" target="_blank" href="/api/kuis/caklontong?apikey=beta" target="_blank" >Cak Lontong</a>
+                        <a class="collapse-item" target="_blank" href="/api/game/family100?apikey=beta" target="_blank" >Family 100</a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fas fa-star-and-crescent"></i>
+                    <span>Islamic</span>
+                </a>
+                <div id="collapseIslamic" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Islamic Features</h6>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/asmaulhusna?apikey=beta" target="_blank" >Asmaul Husna</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/jadwalshalat?kota=banyuwangi&apikey=beta" target="_blank" >Jadwal Shalat </a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=beta" target="_blank" >Hadist Sahih</a>
+                         <a class="collapse-item" target="_blank" href="/api/muslim/quran?surah=1&ayat=2&apikey=beta" target="_blank" >Al Qur'an</a>
+                        <a class="collapse-item" target="_blank" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=beta" target="_blank" >Kisah Nabi</a>
+                      </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSimi" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fas fa-smile"></i>
+                    <span>Simi simi</span>
+                </a>
+                <div id="collapseSimi" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Simi Simi Features</h6>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi?text=assalamualaikum&apikey=beta" target="_blank" >Simi ID</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi-ind2?text=hallo%20kak&apikey=beta" target="_blank" >Simi ID2</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi2?text=how%20are%20you&apikey=beta" target="_blank" >Simi EN</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi-en2?text=Hi%20friend%20&apikey=beta" target="_blank" >Simi EN2</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi3?text=arigatou&apikey=beta" target="_blank" >Simi Japan</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi-jp2?text=arigatou&apikey=beta" target="_blank" >Simi Japan2</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi4?text=assalamualaikum ya aqhi&apikey=beta" target="_blank" >Simi Arab</a>
+                        <a class="collapse-item" target="_blank" href="/api/fun/simisimi-ar2?text=la%20tahzan&apikey=beta" target="_blank" >Simi Arab2</a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseprimbon" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fas fa-star"></i>
+                    <span>Primbon</span>
+                </a>
+                <div id="collapseprimbon" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Primbon Features</h6>              
+                        <a class="collapse-item" target="_blank" href="/api/primbon/artimimpi?text=bangkrut&apikey=beta" target="_blank" >Arti Mimpi</a>
+                        <a class="collapse-item" target="_blank" href="/api/primbon/artinama?text=Fadly&apikey=beta" target="_blank" >Arti Nama</a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandomimage" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-image"></i>
+                    <span>Random Image</span>
+                </a>
+                <div id="collapseRandomimage" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Random Image</h6>
+                   <a class="collapse-item" target="_blank" href="/api/wallpaper/trans?apikey=beta">Wallpaper Transformers </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/cyberspace?apikey=beta">Wallpaper Cyberspace </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/gaming?apikey=beta">Wallpaper Gaming </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/islami?apikey=beta"> Wallpaper Islami </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/programing?apikey=beta"> Wallpaper Programing </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/teknologi?apikey=beta"> Wallpaper Teknologi </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/mountain?apikey=beta"> Wallpaper Mountain </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/jeni?apikey=beta">Random Jeni </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/jiso?apikey=beta">Random Jisso </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/cecan2?apikey=beta">Random Cecan2 </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/cogan2?apikey=beta">Random Cogan2 </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/satanic?apikey=beta">Random Satanic </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/katakata?apikey=beta">Random Quotes </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/pentol?apikey=beta">Random Pentol </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/kartun?apikey=beta">Random Cartoon </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/tatasurya?apikey=beta">Random Planet </a>
+                  <a class="collapse-item" target="_blank" href="/api/wallpaper/ryujin?apikey=beta" target="_blank" >Random Ryujin Ityz</a>
+		   <a class="collapse-item" target="_blank" href="/api/wallpaper/rose?apikey=beta" target="_blank" >Random Rose</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/justina?apikey=beta" target="_blank" >Random Justina Xie</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/random/blackpink?apikey=beta" target="_blank" >Random Blackpink</a>                        
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/doraemon?apikey=beta" target="_blank" >Random Doraemon</a>                      
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/ppcouple?apikey=beta" target="_blank" >Random PP Couple</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/kpop?apikey=beta" target="_blank" >Random Kpop</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/hekel?apikey=beta" target="_blank" >Random Hekel</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/pubg?apikey=beta" target="_blank" >Random PUBG</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/cogan?apikey=beta" target="_blank" >Random Cogan</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/cecan?apikey=beta" target="_blank" >Random Cecan</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/aesthetic?apikey=beta" target="_blank" >Random Aesthetic</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/wallhp?apikey=beta" target="_blank" >Wallpaper Aesthetic</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/anime?apikey=beta" target="_blank" >Wallpaper Anime</a>
+           <a class="collapse-item" target="_blank" href="/api/asupan?apikey=beta" target="_blank" >Random Asupan</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/kucing?apikey=beta" target="_blank" >Random Kucing</a>
+           <a class="collapse-item" target="_blank" href="/api/wallpaper/anjing?apikey=beta" target="_blank" >Random Anjing</a>
+                    </div>
+                </div>
+                </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNsfw" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Nsfw</span>
+                </a>
+                <div id="collapseNsfw" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+            <h6 class="collapse-header">NSFW Features</h6>
+            <a class="collapse-item" target="_blank" href="/api/wallpaper/nsfwloli?apikey=beta" target="_blank" >Nswf Loli</a>
+                       <a class="collapse-item" target="_blank" href="/api/nsfw/ahegao?apikey=beta" target="_blank" >Nsfw Ahegao</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/ass?apikey=beta" target="_blank" >Nsfw Ass</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/bdsm?apikey=beta" target="_blank" >Nswf BDSM</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/blowjob?apikey=beta" target="_blank" >Nsfw Blowjob</a>
+		               <a class="collapse-item" target="_blank" href="/api/nsfw/cuckold?apikey=beta" target="_blank" >Nsfw Cuckold</a>
+		               <a class="collapse-item" target="_blank" href="/api/nsfw/cum?apikey=beta" target="_blank" >Nsfw Cum</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/ero?apikey=beta" target="_blank" >Nsfw Ero</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/femdom?apikey=beta" target="_blank" >Nsfw Femdom</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/foot?apikey=beta" target="_blank" >Nsfw Foot</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/gangbang?apikey=beta" target="_blank" >Nsfw Gangbang</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/glasses?apikey=beta" target="_blank" >Nsfw Glasses</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/hentai?apikey=beta" target="_blank" >Nsfw Hentai</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/gifs?apikey=beta" target="_blank" >Nsfw Gifs</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/jahy?apikey=beta" target="_blank" >Nsfw Jahy</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/manga?apikey=beta" target="_blank" >Nsfw Manga</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/masturbation?apikey=beta" target="_blank" >Nsfw Masturbasi</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/neko?apikey=beta" target="_blank" >Nsfw Neko</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/orgy?apikey=beta" target="_blank" >Nsfw Orgy</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/panties?apikey=beta" target="_blank" >Nsfw Panties</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/pussy?apikey=beta" target="_blank" >Nsfw Pussy</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/neko2?apikey=beta" target="_blank" >Nsfw Neko2</a>
+		                <a class="collapse-item" target="_blank" href="/api/nsfw/tentacles?apikey=beta" target="_blank" >Nsfw Tentacles</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/thighs?apikey=beta" target="_blank" >Nsfw Things</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/yuri?apikey=beta" target="_blank" >Nsfw Yuri</a>
+                        <a class="collapse-item" target="_blank" href="/api/nsfw/zettai?apikey=beta" target="_blank" >Nsfw Zettai</a>
+          </div>
+        </div>
+      </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseImage" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-cat"></i>
+                    <span>Random Anime</span>
+                </a>
+                <div id="collapseImage" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Wibu</h6>
+                        <a class="collapse-item" target="_blank" href="/api/random/cosplay?apikey=beta" target="_blank" >Random Cosplay</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/waifu?apikey=beta" target="_blank" >Waifu</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/waifu2?apikey=beta" target="_blank" >Waifu2</a>                       
+<a class="collapse-item" target="_blank" href="/api/wallpaper/shota?apikey=beta" target="_blank" >Shota</a>
+		        <a class="collapse-item" target="_blank" href="/api/wallpaper/loli?apikey=beta" target="_blank" >Anime Loli</a>
+	           <a class="collapse-item" target="_blank" href="/api/wallpaper/yotsuba?apikey=beta" target="_blank" >Random Yotsuba</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/shinomiya?apikey=beta" target="_blank" >Random Shinomiya</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/yumeko?apikey=beta" target="_blank" >Random Yumeko</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/tejina?apikey=beta" target="_blank" >Random Tejina</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/chiho?apikey=beta" target="_blank" >Random Chiho</a>
+      <a class="collapse-item" target="_blank" href="/api/wallpaper/boruto?apikey=beta" target="_blank" >Random Boruto</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/kaori?apikey=beta" target="_blank" >Random Kaori</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/shizuka?apikey=beta" target="_blank" >Random Shizuka</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/kaga?apikey=beta" target="_blank" >Random Kaga</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/kotori?apikey=beta" target="_blank" >Random Kotori</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/mikasa?apikey=beta" target="_blank" >Random Mikasa</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/akiyama?apikey=beta" target="_blank" >Random Akiyama</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/gremory?apikey=beta" target="_blank" >Random Gremory</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/isuzu?apikey=beta" target="_blank" >Random Isuzu</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/shina?apikey=beta" target="_blank" >Random Shina</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/kagura?apikey=beta" target="_blank" >Random Kagura</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/shinka?apikey=beta" target="_blank" >Random Shinka</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/eba?apikey=beta" target="_blank" >Random Eba</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/elaina?apikey=beta" target="_blank" >Random Elaina</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/yuri?apikey=beta" target="_blank" >Random Yuri</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/erza?apikey=beta" target="_blank" >Random Erza</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/hinata?apikey=beta" target="_blank" >Random Hinata</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/minato?apikey=beta" target="_blank" >Random Minato</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/naruto?apikey=beta" target="_blank" >Random Naruto</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/sagiri?apikey=beta" target="_blank" >Random Sagiri</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/nezuko?apikey=beta" target="_blank" >Random Nezuko</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/rize?apikey=beta" target="_blank" >Random Rize</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/ana?apikey=beta" target="_blank" >Random Anna</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/deidara?apikey=beta" target="_blank" >Random Deidara</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/yuki?apikey=beta" target="_blank" >Random Yuki</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/ana?apikey=beta" target="_blank" >Random Anna</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/asuna?apikey=beta" target="_blank" >Random Asuna</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/ayuzawa?apikey=beta" target="_blank" >Random Ayuzawa</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/chitoge?apikey=beta" target="_blank" >Random Chitoge</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/emilia?apikey=beta" target="_blank" >Random Emilia</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/hestia?apikey=beta" target="_blank" >Random Hestia</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/inori?apikey=beta" target="_blank" >Random Inori</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/itachi?apikey=beta" target="_blank" >Random Itachi</a>
+<a class="collapse-item" target="_blank" href="/api/wallpaper/madara?apikey=beta" target="_blank" >Random Madara</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/sakura?apikey=beta" target="_blank" >Random Sakura</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/sasuke?apikey=beta" target="_blank" >Random Sasuke</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/tsunade?apikey=beta" target="_blank" >Random Tsunade</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/onepiece?apikey=beta" target="_blank" >Random One Piece</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/mobil?apikey=beta" target="_blank" >Random Mobil</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/montor?apikey=beta" target="_blank" >Random Montor</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/boneka-chucky?apikey=beta" target="_blank" >Random Boneka Chucky</a>
+                                                <a class="collapse-item" target="_blank" href="/api/wallpaper/keneki?apikey=beta" target="_blank" >Random Keneki</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/megumin?apikey=beta" target="_blank" >Random Megumin</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/toukachan?apikey=beta" target="_blank" >Random Toukachan</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/akira?apikey=beta" target="_blank" >Random Akira</a>
+		                <a class="collapse-item" target="_blank" href="/api/wallpaper/itori?apikey=beta" target="_blank" >Random Itori</a>
+		                <a class="collapse-item" target="_blank" href="/api/wallpaper/kurumi?apikey=beta" target="_blank" >Random Kurumi</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/miku?apikey=beta" target="_blank" >Random Miku</a>
+                        <a class="collapse-item" target="_blank" href="/api/wallpaper/pokemon?apikey=beta" target="_blank" >Random Pokemon</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSticker" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fas fa-smile"></i>
+                    <span>Sticker & Canvas</span>
+                </a>
+                <div id="collapseSticker" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Sticker</h6>
+                        <a class="collapse-item" target="_blank" href="/api/maker/ttp?text=Fadly&apikey=beta" target="_blank" >TTP Maker</a>
+                        <a class="collapse-item" target="_blank" href="/api/maker/attp?text=Fadly&apikey=beta" target="_blank" >ATTP Maker</a>
+                        <a class="collapse-item" target="_blank" href="/api/canvas/welcome?username=Fadly&memberCount=257&gcname=Whatsapp Bot Nodejs&bg=&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&pp=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&gcicon=https://avatars.githubusercontent.com/u/85196372?s=400&u=7ccec6bcffa37e5c4517d9ed53698944070b7063&v=4.jpg&apikey=beta" target="_blank" >Welcome Canvas</a>
+                  </div>
+                </div>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Contact
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="https://t.me/fadlyid">
+                    <i class="fab fa-fw fa-telegram-plane"></i>
+                    <span>Telegram</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+        </ul>
+        <!-- Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+            <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+            <ul class="navbar-nav ml-auto">
+              <div class="topbar-divider d-none d-sm-block"></div>
+              <li class="nav-item dropdown no-arrow">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <span class="badge badge-success badge-counter">2 </span>
+              </a>
+                 <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header bg-info-gradient">
+                  INFO CENTER
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-info-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">May 05, 2021</div>
+                    <span style="font-size:12px;">Delete Apikey: fadlykey</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">November 19, 2020</div>
+                    <span style="font-size:14px;">Kelahiran Rest Api</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            </ul>
+  </nav>
+                <!-- Sidebar -->
+
+                    <!-- Container Fluid-->
+                    <div class="container-fluid" id="container-wrapper">
+                        <div class="card h-50 mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col mr-2">
+                    <h3 style="margin-bottom: 0;"><i class="fas fa-ruler text-danger"></i>README</h3>
+    
+                    <div class="card-body mb-3">
+                        <ol>
+                            <li>Mohon untuk tidak spam Apikeys</li>
+                            <li>Jika Apikeys invalid hubungi saya</li>
+                            <li>Semua fitur yang ada di sini free dan unlimited request</li>
+                            <li>Rest API sewaktu waktu akan maintenance</li>
+                            <li>Udah itu aja</li>
+                        </ol>
+                    </div>
+                                    </div>
+                                    <div class="col-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor (Unique)</div>
+                                            <div class="h5 mb-0 font-weight-bold">8372</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-user faa-ring animated fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold">8372</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar faa-wrench animated fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Row-->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            Someone want to donate me?
+                            <p>
+                                <a href="https://trakteer.id/fadlyid" class="btn btn-primary btn-sm mr-2" target="_blank"><i class="fa fa-fw fa-wallet"></i>&nbsp;Trakteer</a>
+                                <a href="https://saweria.co/fadlyid" class="btn btn-primary btn-sm ml-2" target="_blank"><i class="fab fa-fw fa-saweria"></i>&nbsp;Saweria</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---Container Fluid-->
+            </div>
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        Made with <i class="fa fa-heart faa-flash animated"></i> by
+                        <a href="https://github.com/xdlyy404" target="_blank" style="color: #fff;">Fadly ID</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/ruang-admin.min.js"></script>
+</body>
+
+</html>
